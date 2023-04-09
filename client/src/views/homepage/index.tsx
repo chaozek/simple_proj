@@ -1,6 +1,6 @@
 import { Container } from "@chakra-ui/react";
+import Product from "src/components/Product";
 import { withProductsData } from "src/HOC/withProductsData";
-import Product from "../../components/Product";
 
 
 interface Product {

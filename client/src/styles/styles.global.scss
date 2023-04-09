@@ -5,3 +5,10 @@
     font-family: "Gotham_Narrow_Book";
     src: url("../../public/fonts/Gotham_Narrow_Book.otf");
 }
+
+.error-message {
+    color: red;
+}
+.error {
+    border: 1px solid red !important;
+}

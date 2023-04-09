@@ -4,6 +4,7 @@ import { dirname, join } from "path";
 import { finished } from "stream/promises";
 import prisma from "../database.js";
 
+
 const Mutation = {
   createManyProducts: async (parent, { data }) => {
     const product = await Promise.all(
@@ -38,7 +39,6 @@ const Mutation = {
     await prisma.product.deleteMany({});
   },
   editProduct: async (parent, { data }) => {
-    console.log(data, "ARGSS");
     const foundProductToEdit = await prisma.product.update({
       where: { id: Number(data.id) },
       data: {

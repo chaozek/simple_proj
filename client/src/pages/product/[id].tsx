@@ -6,7 +6,9 @@ import ProductDetail from "src/views/productDetail";
 
 
 type Props = AppProps & {
-  query: any;
+  query: {
+    id: string;
+  };
 };
 
 const ProductDetailPage: NextPage<Props> = (props) => {
